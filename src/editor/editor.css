@@ -1,0 +1,130 @@
+/*
+ * Styles for the class names in `theme.ts`, which Lexical stamps onto the nodes
+ * it renders.
+ *
+ * Under MUI these came free from CssBaseline's heading and list defaults.
+ * Tailwind's preflight resets those, so they are declared explicitly here.
+ * Sizes mirror packages/mail-renderer/src/styles/default.ts so the editor
+ * roughly matches the rendered email.
+ */
+
+.editor-paragraph {
+  font-size: 0.875rem;
+  line-height: 1.57;
+  margin: 0 0 0.5em;
+}
+
+.editor-heading-h1,
+.editor-heading-h2,
+.editor-heading-h3,
+.editor-heading-h4,
+.editor-heading-h5 {
+  font-weight: 600;
+  margin: 0.5em 0 0.25em;
+}
+
+.editor-heading-h1 {
+  font-size: 1.875rem;
+  line-height: 1.27;
+}
+
+.editor-heading-h2 {
+  font-size: 1.5rem;
+  line-height: 1.33;
+}
+
+.editor-heading-h3 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.editor-heading-h4 {
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+.editor-heading-h5 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.editor-heading-h6 {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.57;
+  margin: 0.5em 0 0.25em;
+}
+
+.editor-list-ul,
+.editor-list-ol {
+  font-size: 0.875rem;
+  line-height: 1.57;
+  margin: 0 0 0.5em;
+  padding-left: 2em;
+}
+
+.editor-list-ul {
+  list-style: disc outside;
+}
+
+.editor-list-ol {
+  list-style: decimal outside;
+}
+
+/* Nested lists re-use the parent marker style rather than stacking bullets */
+.editor-nested-listitem {
+  list-style-type: none;
+}
+
+.editor-link {
+  color: #4c8bea;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.editor-quote {
+  border-left: 5px solid #4c8bea;
+  background-color: rgb(236 239 241 / 50%);
+  font-style: italic;
+  margin: 1em 0;
+  padding: 0.5em 1em;
+}
+
+.editor-textBold {
+  font-weight: 700;
+}
+
+.editor-textItalic {
+  font-style: italic;
+}
+
+.editor-textUnderline {
+  text-decoration: underline;
+}
+
+.editor-textStrikethrough {
+  text-decoration: line-through;
+}
+
+.editor-textUnderlineStrikethrough {
+  text-decoration: underline line-through;
+}
+
+.editor-textSubscript {
+  font-size: 0.8em;
+  vertical-align: sub;
+}
+
+.editor-textSuperscript {
+  font-size: 0.8em;
+  vertical-align: super;
+}
+
+.editor-textCode,
+.editor-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.85em;
+  background-color: rgb(236 239 241 / 50%);
+  padding: 0.15em 0.3em;
+  border-radius: 4px;
+}
